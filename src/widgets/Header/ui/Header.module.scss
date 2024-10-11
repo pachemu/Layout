@@ -1,0 +1,32 @@
+.container {
+  width: 68vw;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_inner {
+    &_logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+.list {
+  display: flex;
+  gap: 3.8vw;
+  width: 16.5vw;
+}
+.header {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 15.6vw;
+  padding-right: 15.6vw;
+}
+.logo {
+  width: 48px;
+  display: flex;
+}
+.active {
+  color: var(--text-color-primary)
+}

@@ -1,0 +1,43 @@
+@import "./_variables.scss";
+@import "./_fonts.scss";
+@import "./_media.scss";
+@import "./_mixins.scss";
+@import "./_normalize.scss";
+@import "./_utils.scss";
+
+body {
+  @include fluid-text(20, 14);
+
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--text-color-main);
+  background-color: var(--text-color-white);
+}
+
+a,
+input,
+button,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration)
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  @include fluid-text(48, 28);
+  font-weight: 600;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+main {
+  height: 300vh;
+}
