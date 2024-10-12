@@ -1,27 +1,56 @@
 .wrapper {
   width: 100%;
-  margin-left: 15.6vw;
   padding-top: 16.6vh;
   position: relative;
 
   &__block {
-    width: 20vw ;
+    width: 20vw;
     height: auto;
+    @include mobile-large {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+
     &_barker {
       padding-left: 30px;
     }
+
     &_title {
-      display: flex;
+
+      @include mobile-large {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
     }
+
     &_description {
       padding-top: 16px;
       color: var(--text-color-third);
+      @include mobile-large {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &_first {
+      }
+
+      &_second {
+
+      }
     }
+
     &_button {
       padding-top: 16px;
       padding-bottom: 16px;
     }
   }
+
   &__background {
     position: absolute;
     top: 0;
@@ -29,48 +58,71 @@
     width: 100%;
     z-index: -1;
     height: 100%;
-    // +70px при 1400 left
+    @include desktop-medium {
+      left: 400px;
+    }
+    @include tablet {
+      left: 600px;
+    }
+    @include mobile-large {
+      transform: scaleX(-1);
+      left: -350px;
+      top: 200px;
+    }
+
     &_svg {
       &_firstRectangle {
         position: absolute;
         right: 290px;
         top: -80px;
       }
+
       &_secondRectangle {
         position: absolute;
         right: 290px;
         top: -80px;
 
       }
+
       &_thirdRectangles {
         position: absolute;
         right: 875px;
         top: 150px;
         color: var(--color-gradient-radial-20);
       }
+
       &_fourthRectangles {
         position: absolute;
         right: 500px;
         top: 500px;
         color: var(--color-gradient-radial-20);
       }
+
       &_screenshot {
         position: absolute;
-        right: 320px ;
+        right: 320px;
         top: 10px;
-        // +600px left
+
         &_mobile {
           position: absolute;
           top: 325px;
           left: 570px;
+          @include desktop-medium {
+            left: 125px;
+          }
+          @include tablet {
+            left: -300px;
+          }
         }
       }
 
     }
   }
 }
+
 .active {
   color: var(--text-color-primary);
+
   &_end {
     color: black;
   }

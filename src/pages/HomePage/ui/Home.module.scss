@@ -1,3 +1,16 @@
 .home {
   width: 100%;
+  margin-left: 15.6vw;
+  @include desktop-medium {
+    margin-left: 123px;
+    margin-right: 130px;
+  }
+  @include tablet {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  @include mobile-large {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }

@@ -5,9 +5,9 @@
 .white_button {
   background-color: var(--color-button-second);
   color: var(--color-button-text);
-  border-radius: var(--border-radius-button);
-  width: 156px;
-  height: 48px;
+  border-radius: 19.2px;
+  padding-inline: 32px;
+  padding-block: 16px;
 
   &:hover {
     background-color: var(--color-button-hover);
@@ -18,8 +18,8 @@
   background-color: var(--color-button-primary);
   color: var(--color-button-second);
   border-radius: var(--border-radius-button);
-  width: 156px;
-  height: 48px;
+  padding-inline: 32px;
+  padding-block: 16px;
 
   &:hover {
     background-color: rgba(255, 71, 77, 0.8);

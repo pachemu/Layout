@@ -11,7 +11,7 @@ const HomeBlock = () => {
         <div className={styles.wrapper}>
             <div className={styles.wrapper__block}>
                 <div className={styles.wrapper__block_title}>
-                    <h2>
+                    <h2 className={styles.wrapper__block_title}>
                         Collecting payments
                         <div className={styles.active}>
                             is easy
@@ -20,11 +20,13 @@ const HomeBlock = () => {
                     </h2>
                 </div>
                 <div className={styles.wrapper__block_description}>
-                    Manage all your supply chain transactions in one dashboard.
-                    Get paid faster, reconcile quicker, grow bigger
+                    <span className={styles.wrapper__block_description_first}>Manage all your supply chain transactions in one dashboard.</span>
+
+                    <span className={styles.wrapper__block_description_second}>Get paid faster, reconcile quicker, grow bigger</span>
+
                 </div>
                 <div className={styles.wrapper__block_button}>
-                    <Button type={'red'} style={{ width: '11vw'}}>Get Started Now</Button>
+                    <Button type={'red'}>Get Started Now</Button>
                 </div>
                 <div className={styles.wrapper__block_barker}>
                     It's free to try! <span>*-*</span>

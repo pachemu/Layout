@@ -1,4 +1,6 @@
 @use "sass:math";
+@import "./media";
+@import "./media";
 @mixin fluid-text($min, $max) {
   font-size: clamp(#{$min}px, #{math.div($max, 1920) * 100}vw, #{$max}px);
 }

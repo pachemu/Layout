@@ -38,7 +38,12 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
             // Translates CSS into CommonJS
             cssLoaderWithModules,
             // Compiles Sass to CSS
-            "sass-loader",
+            {
+                loader: 'sass-loader',
+                options: {
+                    additionalData: `@import "@/app/styles/utils/_media.scss";`
+                }
+            },
         ],
     }
 
