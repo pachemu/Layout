@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile-large {
+    justify-content: space-between;
+    align-items: center;
+  }
   &_inner {
     &_logo {
       display: flex;
@@ -15,25 +19,70 @@
 .list {
   display: flex;
   gap: 3.8vw;
-  width: 16.5vw;
 }
 .header {
   display: flex;
   padding-top: 30px;
-  padding-left: 15.6vw;
-  padding-right: 15.6vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
   @include desktop-medium {
     padding-left: 123px;
     padding-right: 130px;
   }
   @include tablet {
-    padding-left: 40px
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 .logo {
   width: 48px;
   display: flex;
+  z-index: 2;
 }
 .active {
   color: var(--text-color-primary)
+}
+.nav {
+  display: flex;
+  align-items: center;
+  &_button_container {
+    padding-left: 14.63vw;
+  }
+}
+
+.hidden_mobile {
+  @include mobile-large {
+    visibility: hidden;
+  }
+}
+.wrapper_burger_button {
+  visibility: hidden;
+  @include mobile-large {
+    visibility: visible;
+
+  }
+}
+
+.visually_hidden {
+  @include mobile-large-above {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+  }
+}
+
+.mobile_overlay {
+
+}
+.modal_open {
+  visibility: visible;
+  flex-direction: column;
+  align-items: flex-start;
 }
