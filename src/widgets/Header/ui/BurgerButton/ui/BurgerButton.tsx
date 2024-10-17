@@ -1,6 +1,8 @@
 import styles from "@/widgets/Header/ui/BurgerButton/ui/BurgerButton.module.scss";
 import {NavLink} from "react-router-dom";
 import Button from "@/shared/ui/Button/ui/Button";
+import Logo from '@/shared/assets/Logo.svg'
+import Tinvio from '@/shared/assets/Tinvio.svg'
 
 interface Props {
     setOpen: any,
@@ -12,8 +14,7 @@ const BurgerButton = ({setOpen, isOpen}: Props) => {
         setOpen(!isOpen);
     }
     return (
-
-        <div className={styles.visually_hidden}>
+        <div>
             <button onClick={toggleModal} className={`${isOpen ? styles.cross_button : styles.burger_button}`}>
             </button>
             <dialog open={isOpen} className={`${styles.mobile_overlay} ${isOpen ? '' : styles.false}`} id='mobileOverlay'>
@@ -40,8 +41,6 @@ const BurgerButton = ({setOpen, isOpen}: Props) => {
                         </Button>
                     </div>
                 </nav>
-
-
             </dialog>
         </div>
     )

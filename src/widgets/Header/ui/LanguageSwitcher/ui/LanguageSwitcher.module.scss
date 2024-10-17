@@ -1,0 +1,93 @@
+// LanguageSwitcher.module.scss
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+.arrow {
+  @include square(24px);
+  @include reset-button();
+  position: relative;
+  padding-left: 13px;
+&_disabled {
+  &::after {
+    @include abs-center;
+    transform: rotate(45deg);
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  &::before {
+    @include abs-center;
+    transform: rotate(140deg);
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    border-radius: 20px;
+    left: 18px;
+  }
+}
+  &_enabled {
+    &::after {
+      @include abs-center;
+      transform: rotate(140deg);
+      content: '';
+      width: 10px;
+      height: 2px;
+      background-color: black;
+      border-radius: 20px;
+    }
+
+    &::before {
+      @include abs-center;
+      transform: rotate(45deg);
+      content: '';
+      width: 10px;
+      height: 2px;
+      background-color: black;
+      border-radius: 20px;
+      left: 18px;
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  height: 139px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px ;
+  border: white;
+  background-color: #FFFFFF; // Добавляем тень для лучшего визуального эффекта
+  z-index: 10; // Убедитесь, что dropdown отображается поверх других элементов
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &_item {
+      border-top: 1px solid var(--input-color); // Добавляем границу сверху
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 0; // Добавляем отступы для лучшего визуального эффекта
+      cursor: pointer;
+    }
+  }
+}

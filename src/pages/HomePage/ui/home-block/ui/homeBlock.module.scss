@@ -2,6 +2,9 @@
   width: 100%;
   padding-top: 16.6vh;
   position: relative;
+  @include mobile-large {
+    padding-top: 7vh;
+  }
 
   &__block {
     width: 20vw;
@@ -65,9 +68,12 @@
       left: 600px;
     }
     @include mobile-large {
-      transform: scaleX(-1);
-      left: -350px;
-      top: 200px;
+      left: 120px;
+      top: 400px;
+    }
+    @include mobile {
+      top: 325px;
+      left: 370px;
     }
 
     &_svg {
@@ -75,6 +81,10 @@
         position: absolute;
         right: 290px;
         top: -80px;
+        @include mobile-large {
+          right: 230px;
+          top: -120px;
+        }
       }
 
       &_secondRectangle {
@@ -85,6 +95,10 @@
       }
 
       &_thirdRectangles {
+        @include mobile-large {
+          right: 680px;
+          top: 0px;
+        }
         position: absolute;
         right: 1050px;
         top: 230px;
@@ -92,6 +106,9 @@
       }
 
       &_fourthRectangles {
+        @include mobile-large {
+          right: 290px;
+        }
         position: absolute;
         right: 500px;
         top: 500px;
@@ -102,16 +119,37 @@
         position: absolute;
         right: 320px;
         top: 10px;
-
+        width: 851px;
+        @include mobile-large {
+          right: -150px;
+          top: -50px;
+          width: 801px;
+          height: 533px;
+        }
+        @include mobile {
+          width: 630px;
+          right: 30px;
+          top: 80px;
+        }
         &_mobile {
           position: absolute;
           top: 325px;
           left: 570px;
+          height: 420px;
           @include desktop-medium {
             left: 125px;
           }
           @include tablet {
             left: -300px;
+          }
+          @include mobile-large {
+            top: 220px;
+            left: -100px;
+          }
+          @include mobile {
+            left: -380px;
+            width: 170px;
+            top: 280px;
           }
         }
       }

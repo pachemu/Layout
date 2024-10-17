@@ -5,6 +5,7 @@ import Logo from '@/shared/assets/Logo.svg'
 import Tinvio from '@/shared/assets/Tinvio.svg'
 import BurgerButton from "@/widgets/Header/ui/BurgerButton/ui/BurgerButton";
 import {useState} from "react";
+import LanguageSwitcher from "@/widgets/Header/ui/LanguageSwitcher/ui/LanguageSwitcher";
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
@@ -14,6 +15,7 @@ const Header = () => {
                 <div className={styles.container_inner_logo}>
                     <span className={styles.logo}><Logo width={"50"} height={"44"}/></span>
                     <span className={styles.logo}><Tinvio/></span>
+                    <LanguageSwitcher className={styles.hidden_mobile} />
                 </div>
                 <nav className={`${styles.hidden_mobile} ${styles.nav} ${styles.list}`}>
                     <ul className={`${styles.list} `}>
