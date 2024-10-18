@@ -29,6 +29,11 @@
         align-items: center;
         flex-direction: column;
       }
+      &_shines {
+        position: absolute;
+        top: 125px;
+        left: -50px;
+      }
     }
 
     &_description {

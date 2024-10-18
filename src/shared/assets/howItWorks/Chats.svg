@@ -1,0 +1,22 @@
+<svg width="90.729980" height="91.778687" viewBox="0 0 90.73 91.7787" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1312_115951_dd" x="0.721191" y="1.769287" width="90.008789" height="90.009399" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="6.66667" result="effect_layerBlur_1"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_1312_115951_dd)">
+		<circle id="Ellipse 67" r="25.000000" transform="matrix(0.982971 -0.183761 0.183708 0.982981 45.7256 46.7739)" fill="#212121" fill-opacity="0.100000"/>
+	</g>
+	<circle id="Ellipse 66" r="30.000000" transform="matrix(0.982971 -0.183761 0.183708 0.982981 35.0005 35.645)" fill="#FFA6A6" fill-opacity="1.000000"/>
+	<rect id="Rectangle 660" x="13.511719" y="22.113770" rx="8.320108" width="35.034386" height="25.320368" transform="rotate(-10.5889 13.511719 22.113770)" fill="#FF474D" fill-opacity="1.000000"/>
+	<path id="Rectangle 661" d="M31.35 18.77L41.07 16.96C45.09 16.2 49.07 18.5 50.16 22.45C51.64 27.86 53.28 35.36 52.73 40.59C52.2 45.59 45.73 51.46 44.83 50.75C43.17 49.46 48.15 41.45 44.88 42.06C41.91 42.61 36.02 43.72 36.02 43.72L31.35 18.77Z" fill="#D61414" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<rect id="Rectangle 662" x="24.345703" y="34.141113" rx="1.151320" width="19.179640" height="2.302639" transform="rotate(-10.5889 24.345703 34.141113)" fill="#E9CECE" fill-opacity="1.000000"/>
+	<rect id="Rectangle 664" x="23.544922" y="29.863770" rx="1.023395" width="19.179640" height="2.046790" transform="rotate(-10.5889 23.544922 29.863770)" fill="#E9CECE" fill-opacity="1.000000"/>
+	<path id="Rectangle 663" d="M33.89 32.35L42.06 30.82C42.69 30.7 43.29 31.12 43.4 31.74C43.52 32.37 43.11 32.97 42.48 33.08L34.31 34.61L33.89 32.35Z" fill="#DB8484" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 665" d="M33.09 28.07L41.39 26.52C41.95 26.42 42.48 26.79 42.58 27.34C42.69 27.9 42.32 28.43 41.77 28.53L33.47 30.09L33.09 28.07Z" fill="#DB8484" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>

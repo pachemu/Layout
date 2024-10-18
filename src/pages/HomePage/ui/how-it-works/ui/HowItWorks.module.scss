@@ -1,0 +1,114 @@
+.howItWorks {
+
+  &_background {
+    position: absolute;
+    left: -0px;
+    z-index: 1;
+    width: 2200px;
+  }
+
+  &__block {
+    padding-top: 400px;
+    position: absolute;
+    z-index: 2;
+
+    &_item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--text-color-white);
+      width: 270px;
+      border-radius: 20px;
+      transform: rotate(8deg);
+      gap: 12px;
+      height: 110px;
+
+      &_Chats {
+        top: -65px;
+      }
+
+      &_Orders {
+        left: 250px;
+      }
+
+      &_Payments {
+        left: -35px;
+        top: 20px;
+      }
+
+      &_svg {
+        &_chats {
+          position: absolute;
+          transform: rotate(-10.5deg);
+          left: 225px;
+          top: -25px;
+        }
+
+        &_orders {
+          position: absolute;
+          top: 70px;
+          left: -30px;
+        }
+
+        &_payments {
+          position: absolute;
+          transform: rotate(-12.28deg);
+          left: -15px;
+          top: -30px;
+        }
+      }
+
+      &_title {
+        padding-top: 16px;
+      }
+
+      &_description {
+        color: var(--text-color-third);
+        font-size: 12px;
+        padding-inline: 42px;
+      }
+    }
+  }
+
+  &__checkOut {
+    z-index: 3;
+    position: relative;
+    padding-top: 325px;
+    width: 574px;
+    left: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &_description {
+      padding-bottom: 50px;
+      color: var(--text-color-third);
+    }
+
+    &_title {
+
+    }
+
+    &_button {
+    }
+  }
+}
+
+.shines {
+  &_Chats {
+    position: absolute;
+    top: -60px;
+    left: 130px;
+  }
+  &_Orders {
+    position: absolute;
+    top: -68px;
+    left: 200px;
+  }
+  &_Payments {
+    position: absolute;
+    left: 280px;
+    top: -20px;
+  }
+}

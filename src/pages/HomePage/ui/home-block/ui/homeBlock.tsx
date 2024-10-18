@@ -9,6 +9,7 @@ import Screenshot from '@/shared/assets/homeBlock/Screenshot.svg'
 import Smile from '@/shared/assets/homeBlock/Smile.svg'
 import MobileRedRectangle from '@/shared/assets/homeBlock/RedRectangleMobile.svg'
 import MobileFullRedRectangle from '@/shared/assets/homeBlock/FullRedRectangleMobile.svg'
+import Shines from '@/shared/assets/homeBlock/Shines.svg'
 import UseDeviceDetect from "@/shared/lib/hooks/UseDeviceDetect";
 
 const HomeBlock = () => {
@@ -30,6 +31,7 @@ const HomeBlock = () => {
                 <div className={styles.wrapper__block}>
                     <div className={styles.wrapper__block_title}>
                         <h2 className={styles.wrapper__block_title}>
+                            <Shines className={styles.wrapper__block_title_shines}/>
                             Collecting payments
                             <div className={styles.active}>
                                 is easy
