@@ -7,6 +7,8 @@ import Button from "@/shared/ui/Button/ui/Button";
 import Shines_Orders from '@/shared/assets/howItWorks/Shines_Orders.svg'
 import Shines_Chats from '@/shared/assets/howItWorks/Shines_Chats.svg'
 import Shines_Payments from '@/shared/assets/howItWorks/Shines_Payments.svg'
+import ToLeft from '@/shared/assets/howItWorks/toLeft.svg'
+import ToRight from '@/shared/assets/howItWorks/toRight.svg'
 
 
 const howItWorks = () => {
@@ -23,6 +25,7 @@ const howItWorks = () => {
                     </div>
                 </div>
                 <div className={`${styles.howItWorks__block_item} ${styles.howItWorks__block_item_Orders}`}>
+                    <ToRight className={styles.howItWorks__block_toRight}/>
                     <Shines_Orders className={styles.shines_Orders}/>
                     <Orders className={styles.howItWorks__block_item_svg_orders}/>
                     <h3 className={styles.howItWorks__block_item_title}>Orders</h3>
@@ -31,6 +34,7 @@ const howItWorks = () => {
                     </div>
                 </div>
                 <div className={`${styles.howItWorks__block_item} ${styles.howItWorks__block_item_Payments}`}>
+                    <ToLeft className={styles.howItWorks__block_toLeft}/>
                     <Shines_Payments className={styles.shines_Payments}/>
                     <Payments className={styles.howItWorks__block_item_svg_payments}/>
                     <h3 className={styles.howItWorks__block_item_title}>Payments</h3>
@@ -40,13 +44,11 @@ const howItWorks = () => {
                 </div>
             </div>
             <div className={styles.howItWorks__checkOut}>
-                <h1 className={styles.howItWorks__checkOut_title}>Check out how it works</h1>
+                <h1 className={styles.howItWorks__checkOut_title}></h1>
                 <div className={styles.howItWorks__checkOut_description}>
-                    It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments across
-                    your supply chain — all within one dashboard.
                 </div>
                 <Button type={"white"} style={{width: '220px'}}>
-                        &#9654; Play Video
+                    &#9654; Play Video
                 </Button>
             </div>
         </section>
