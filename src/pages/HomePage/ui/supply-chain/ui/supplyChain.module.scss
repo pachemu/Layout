@@ -1,0 +1,53 @@
+.chain {
+  padding-top: 600px;
+  &_base {
+    &_main {
+      width: 574px;
+      &__title {
+        &_subtitle {
+          color: var(--text-color-primary);
+        }
+      }
+      &__features {
+        padding-block: 32px;
+      }
+    }
+  }
+}
+//chain_base_main__title
+.background {
+  left: 700px;
+  top: -420px;
+  position: relative;
+  &_fullredRectangle {
+    width: 732px;
+    position: absolute;
+    z-index: 1;
+  }
+  &_redRectangle {
+    width: 680px;
+    z-index: 1;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+  }
+  &_firstScreenshot {
+    z-index: 5000;
+    top: 70px;
+    position: relative;
+    width: 300px;
+  }
+  &_secondScreenshot {
+    z-index: 5;
+    top: 200px;
+    position: relative;
+    width: 300px;
+  }
+  &_shines {
+    position: relative;
+    width: 190px;
+    z-index: 50;
+    left: -700px;
+    top: -170px;
+  }
+}

@@ -21,10 +21,12 @@
   gap: 3.8vw;
 }
 .header {
+  position: fixed;
   display: flex;
   padding-top: 30px;
   padding-left: 15vw;
   padding-right: 15vw;
+  z-index: 100;
   @include desktop-medium {
     padding-left: 123px;
     padding-right: 130px;
@@ -46,8 +48,9 @@
 .nav {
   display: flex;
   align-items: center;
+  padding-left: 240px;
   &_button_container {
-    padding-left: 14.63vw;
+    padding-left: 13.63vw;
   }
 }
 

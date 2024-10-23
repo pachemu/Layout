@@ -1,0 +1,10 @@
+.block {
+  &_button {
+    border-radius: var(--border-radius-button);
+    padding: 11px 34px 12px 34px;
+    font-size: 14px;
+    &_active {
+      border: black solid 1px;
+    }
+  }
+}

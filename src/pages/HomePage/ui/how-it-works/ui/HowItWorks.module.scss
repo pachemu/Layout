@@ -70,6 +70,7 @@ $title: "Check out how it works ";
       transform: rotate(8deg);
       gap: 12px;
       height: 110px;
+      box-shadow: rgba(0, 0, 0, 0.015) 10px 10px;
       @include mobile {
         width: 167px;
         height: 70px;

@@ -10,7 +10,7 @@ import LanguageSwitcher from "@/widgets/Header/ui/LanguageSwitcher/ui/LanguageSw
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
     return (
-        <header className={styles.header}>
+        <header className={styles.header} style={{width:'100%'}}>
             <div className={styles.container} style={{paddingTop: '20px'}}>
                 <div className={styles.container_inner_logo}>
                     <span className={styles.logo}><Logo width={"50"} height={"44"}/></span>
