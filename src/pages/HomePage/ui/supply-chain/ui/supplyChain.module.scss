@@ -2,10 +2,23 @@
   padding-top: 600px;
   &_base {
     &_main {
-      width: 574px;
+      width: 590px;
       &__title {
         &_subtitle {
           color: var(--text-color-primary);
+          position: relative;
+          overflow: hidden;
+
+          &::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            border-left: 2px solid black;
+            left: 0;
+            animation: typing 3s steps(10) forwards;
+          }
         }
       }
       &__features {
@@ -49,5 +62,18 @@
     z-index: 50;
     left: -700px;
     top: -170px;
+  }
+}
+
+@keyframes typing {
+  0% {
+    left: 0;
+  }
+  40%,
+60% {
+    left: calc(100%);
+  }
+  100% {
+    left: 100%
   }
 }
