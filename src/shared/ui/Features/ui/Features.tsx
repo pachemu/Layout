@@ -9,8 +9,8 @@ const Features = ({array} : Props) => {
         <div className={styles.block}>
             {array.map((item) =>
                 <div className={styles.block_item}>
-                    <Rectangle/>
-                    {item}
+                    <Rectangle className={styles.block_item_rectangle}/>
+                    <span className={styles.block_item_text}>{item}</span>
                 </div>
 
             )}

@@ -1,8 +1,6 @@
 import styles from "@/widgets/Header/ui/BurgerButton/ui/BurgerButton.module.scss";
 import {NavLink} from "react-router-dom";
 import Button from "@/shared/ui/Button/ui/Button";
-import Logo from '@/shared/assets/Logo.svg'
-import Tinvio from '@/shared/assets/Tinvio.svg'
 
 interface Props {
     setOpen: any,

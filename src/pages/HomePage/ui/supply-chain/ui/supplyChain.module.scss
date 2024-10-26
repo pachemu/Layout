@@ -1,14 +1,46 @@
 .chain {
   padding-top: 600px;
+  @include mobile-large {
+    padding-top: 1600px;
+  }
+  @include mobile {
+    padding-top: 1300px;
+    width: 375px;
+  }
   &_base {
+    @include mobile-large {
+      display: flex;
+    }
     &_main {
       width: 590px;
+      @include mobile-large {
+        display: flex;
+        flex-direction: column;
+        padding-left: 169px ;
+        width: 550px;
+      }
+      @include mobile {
+        width: 375px;
+        padding-left: 0;
+      }
       &__title {
+        @include laptop {
+          font-size: 36px;
+        }
+        @include mobile-large {
+          text-align: center;
+          font-size: 32px;
+          width: 420px;
+        }
+        @include mobile {
+          font-size: 28px ;
+          width: auto;
+        }
         &_subtitle {
           color: var(--text-color-primary);
           position: relative;
           overflow: hidden;
-
+          padding-left: 8px;
           &::after {
             content: '';
             position: absolute;
@@ -24,37 +56,87 @@
       &__features {
         padding-block: 32px;
       }
+      &__button {
+        padding-inline: 20%;
+      }
     }
   }
 }
 //chain_base_main__title
 .background {
   left: 700px;
-  top: -420px;
+  top: -600px;
   position: relative;
+  @include laptop {
+    left: 600px;
+    top: -540px;
+  }
+  @include tablet {
+    left: 500px;
+  }
+  @include mobile-large {
+    left: -550px;
+    top: 500px;
+  }
   &_fullredRectangle {
-    width: 732px;
+    width: 740px;
     position: absolute;
     z-index: 1;
+    @include mobile {
+      width: 560px;
+      left: 60px;
+    }
   }
   &_redRectangle {
     width: 680px;
     z-index: 1;
     position: absolute;
-    left: 25px;
-    top: 25px;
+    left: 30px;
+    top: 29px;
+    @include mobile {
+      width: 480px;
+      left: 100px;
+      top: 35px;
+    }
+  }
+  &_grayRectangles {
+    position: absolute;
+    z-index: 2;
+    left: 300px;
+    top: 60px;
   }
   &_firstScreenshot {
-    z-index: 5000;
+    z-index: 5;
     top: 70px;
     position: relative;
     width: 300px;
+    @include mobile-large {
+      left: 380px;
+      top: 187px;
+      width: 330px;
+    }
+    @include mobile {
+      width: 245px;
+      left: 340px;
+      top: 100px;
+    }
   }
   &_secondScreenshot {
     z-index: 5;
     top: 200px;
     position: relative;
     width: 300px;
+    left: -50px;
+    @include mobile-large {
+      left: 70px;
+      top: -450px;
+      width: 330px;
+    }
+    @include mobile {
+      width: 245px;
+      top: -400px;
+      left: 130px;
+    }
   }
   &_shines {
     position: relative;

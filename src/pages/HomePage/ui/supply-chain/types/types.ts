@@ -5,6 +5,7 @@ interface Objects {
     text: string;
     features: string[],
     FirstScreenshot: typeof FirstScreenshot,
-    SecondScreenshot: typeof SecondScreenshot
+    SecondScreenshot: typeof SecondScreenshot,
+    name?: string;
 }
 export default Objects;

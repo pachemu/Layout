@@ -20,7 +20,7 @@ const Buttons = ({setMain, options, main}: Props) => {
                     key={item.text}
                     onClick={() => setMain(item)}
                     className={`${styles.block_button} ${main === item ? styles.block_button_active : ''}`}>
-                    {item.text}
+                    {item.name}
                 </button>
             ))}
         </div>

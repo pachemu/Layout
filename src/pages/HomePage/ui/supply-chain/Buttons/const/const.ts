@@ -8,6 +8,7 @@ import SecondScreenshot_money from "@/shared/assets/supplyChain/SecondScreen_bud
 
 const options : Objects[] = [
     {
+        name: 'Chats',
         text: 'buddy',
         features: [
             "Create chats with any business (even if they’re not on Tinvio)",
@@ -18,6 +19,7 @@ const options : Objects[] = [
         SecondScreenshot: SecondScreenshot_buddy,
     },
     {
+        name: 'Orders',
         text: 'speedy',
         features: [
             "Create or confirm purchase orders at lightning speed",
@@ -28,6 +30,7 @@ const options : Objects[] = [
         SecondScreenshot: SecondScreenshot_speedy,
     },
     {
+        name: 'Payments',
         text: 'money',
         features: [
             "Send invoices and easily track them until they’re paid",

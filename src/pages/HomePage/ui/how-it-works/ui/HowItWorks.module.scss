@@ -5,6 +5,10 @@ $title: "Check out how it works ";
   @include mobile-large {
     padding-top: 325px;
   }
+  @include mobile {
+    padding-top: 400px;
+    overflow-x: hidden;
+  }
   &_background {
     position: absolute;
     left: -0px;

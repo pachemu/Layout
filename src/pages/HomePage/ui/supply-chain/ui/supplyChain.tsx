@@ -7,7 +7,7 @@ import Features from "@/shared/ui/Features/ui/Features";
 import {useEffect, useState} from "react";
 import Buttons from "@/pages/HomePage/ui/supply-chain/Buttons/ui/Buttons";
 import options from "@/pages/HomePage/ui/supply-chain/Buttons/const/const";
-
+import GrayRectangles from '@/shared/assets/supplyChain/GrayRectangles.svg'
 
 const SupplyChain = () => {
 
@@ -17,20 +17,18 @@ const SupplyChain = () => {
 
 // Эффект для перезапуска анимации при изменении main
     useEffect(() => {
-        // Сбрасываем и перезапускаем анимацию
         setAnimateKey(prevKey => prevKey + 1);
     }, [main]);
 
     return (
-        <div className={styles.chain}>
+        <section className={styles.chain}>
             <div className={styles.chain_base}>
                 <div className={styles.chain_base_main}> {/* Див с основным содержанием */}
                     <div className={styles.chain_base_main__title}>
-                        <h1>Smarter supply chain transactions.
+                        <h1 className={styles.chain_base_main__title}>Smarter supply chain transactions.
                             <span
                                 key={animateKey}
-                                className={`${styles.chain_base_main__title_subtitle}`}>
-                More {main.text}
+                                className={`${styles.chain_base_main__title_subtitle}`}>More {main.text}
               </span>
                         </h1>
 
@@ -42,19 +40,22 @@ const SupplyChain = () => {
                     <div className={styles.chain_base_main__features}>
                         <Features array={main.features}/>
                     </div>
-                    <Button type={'red'}>
-                        More Features
-                    </Button>
+                    <span className={styles.chain_base_main__button}>
+                        <Button type={'red'}>
+                            More Features
+                        </Button>
+                    </span>
                 </div>
                 <div className={styles.background}> {/* Див с бэкграундом*/}
                     <FullRedRectangle className={styles.background_fullredRectangle}/>
                     <RedRectangle className={styles.background_redRectangle}/>
+                    <GrayRectangles className={styles.background_grayRectangles}/>
                     <main.FirstScreenshot className={styles.background_firstScreenshot}/>
                     <main.SecondScreenshot className={styles.background_secondScreenshot}/>
                     <Shines className={styles.background_shines}/>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
