@@ -1,0 +1,83 @@
+.featuredOn {
+  width: 100%;
+  &_block {
+
+    &_base {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-block: 48px;
+    }
+  }
+  &_background {
+    position: absolute;
+    z-index: -1;
+    left: -200px;
+  }
+  &_title {
+    width: 666px;
+    text-align: center;
+    margin-left: 350px;
+    border-bottom: 1px rgb(210, 210, 210) solid;
+  }
+  &_companies {
+    margin-left: 100px;
+  }
+  &_shines {
+    position: absolute;
+    left: 970px;
+    top: 2660px;
+  }
+  &_whyChoose {
+    &_background {
+      position: absolute;
+      left: 53px;
+      top: 2915px;
+      z-index: -1;
+      color: var(--background-color-dark);
+    }
+    &_firstRectangle {
+      position: absolute;
+      width: 1000px;
+      left: -320px;
+      top: 2700px;
+      z-index: -1;
+    }
+    &_firstSmallRectangles {
+      position: absolute;
+      width: 465px;
+      top: 3650px;
+      left: 90px;
+      z-index: -1;
+    }
+    &_secondRectangle {
+      position: absolute;
+      width: 1000px;
+      left: 1200px;
+      top: 3300px;
+      z-index: -1;
+    }
+    &_secondSmallRectangles {
+      position: absolute;
+      width: 290px ;
+      left: 1270px;
+      top: 3190px;
+      z-index: -1;
+    }
+    &_main {
+      &_title {
+        padding-left: 500px;
+        padding-top: 260px;
+      }
+      &_slider {
+        width: 1132px;
+        height: 378px;
+        background-color: white;
+        margin-top: 70px;
+        margin-left: 150px;
+        border-radius: 32px;
+        z-index: 5;
+      }
+    }
+  }
+}

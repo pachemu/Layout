@@ -1,0 +1,48 @@
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.sliderWrapper {
+  width: inherit;
+  overflow: hidden;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  flex-shrink: 0;
+  display: flex;
+  height: 378px;
+  width: inherit;
+}
+
+.sliderArrow {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: var(--color-button-hover);
+  margin-bottom: 56px;
+}
+
+.leftArrow {
+  margin-left: 56px;
+}
+
+.rightArrow {
+
+}
+.arrows {
+  width: min-content;
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  padding-top: 300px;
+}

@@ -1,0 +1,34 @@
+.block {
+  width: inherit;
+  height: inherit;
+
+  &_description {
+    z-index: 10;
+    margin: 32px;
+    padding: 24px;
+    width: 932px;
+    height: 123px;
+    background-color: #F1F1F1;
+    border-radius: 32px;
+    &_text {
+      width: 750px;
+      display: inline-block;
+    }
+    &_brackets {
+      margin-top: 55px;
+      position: absolute;
+    }
+  }
+  &_logo {
+    margin-left: 56px;
+  }
+  &_image {
+    margin-left: 850px;
+    position: relative;
+    top: -210px;
+  }
+  &_shines {
+
+  }
+
+}
