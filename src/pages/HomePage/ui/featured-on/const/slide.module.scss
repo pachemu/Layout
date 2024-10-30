@@ -1,31 +1,105 @@
 .block {
   width: inherit;
   height: inherit;
-
+  overflow: hidden;
+  @include mobile-large {
+    height: 610px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include mobile {
+    height: 550px;
+  }
   &_description {
     z-index: 10;
     margin: 32px;
     padding: 24px;
     width: 932px;
-    height: 123px;
     background-color: #F1F1F1;
     border-radius: 32px;
+    @include desktop-medium {
+      width: 823px;
+    }
+    @include tablet {
+      width: 724px;
+    }
+    @include mobile-large {
+      width: inherit;
+      position: absolute;
+      border-radius: 0;
+      margin: 0;
+      margin-bottom: 150px;
+    }
+    @include mobile{
+      width: 327px;
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 100px;
+    }
+
     &_text {
       width: 750px;
       display: inline-block;
+      @include desktop-medium {
+        width: 626px;
+      }
+      @include tablet {
+        width: 469px;
+      }
+      @include mobile-large {
+        width: 418px;
+      }
+      @include mobile{
+        width: 287px;
+      }
     }
     &_brackets {
       margin-top: 55px;
       position: absolute;
+      @include mobile-large {
+        margin-top: 185px;
+      }
+      @include mobile {
+        margin-top: 40px;
+        margin-left: 270px;
+      }
     }
   }
   &_logo {
     margin-left: 56px;
+    @include mobile-large {
+      position: absolute;
+      margin-bottom: 56px;
+    }
+    @include mobile {
+      margin-bottom: 30px;
+      margin-left: 20px;
+    }
   }
   &_image {
     margin-left: 850px;
     position: relative;
-    top: -210px;
+    top: -220px;
+    width: 277px;
+    height: 353px;
+    @include desktop-medium {
+      margin-left: 800px;
+    }
+    @include tablet {
+      margin-left: 550px;
+      top: -240px;
+    }
+    @include mobile-large {
+      margin-left: 130px;
+      top: -290px;
+      width: 200px;
+      height: 290px;
+    }
+    @include mobile {
+      width: 183px;
+      height: 235px;
+      margin-left: 75px;
+    }
   }
   &_shines {
 

@@ -13,12 +13,32 @@
     position: absolute;
     z-index: -1;
     left: -200px;
+    @include desktop-medium {
+      left: -690px;
+    }
+    @include tablet {
+      left: -1045px;
+    }
+    @include mobile-large {
+      left: -1305px;
+    }
   }
   &_title {
     width: 666px;
     text-align: center;
     margin-left: 350px;
     border-bottom: 1px rgb(210, 210, 210) solid;
+    @include tablet {
+      margin-left: 150px;
+    }
+    @include mobile-large{
+      margin-left: 210px;
+      width: 336px;
+      font-size: 36px;
+    }
+    @include mobile {
+      margin-left: 10px;
+    }
   }
   &_companies {
     margin-left: 100px;
@@ -27,6 +47,10 @@
     position: absolute;
     left: 970px;
     top: 2660px;
+    @include desktop-medium {
+      left: 480px;
+      top: 2730px;
+    }
   }
   &_whyChoose {
     &_background {
@@ -35,6 +59,19 @@
       top: 2915px;
       z-index: -1;
       color: var(--background-color-dark);
+      height: 970px;
+      @include tablet {
+        left: 0;
+      }
+      @include tablet {
+        top: 3600px;
+      }
+      @include mobile-large {
+        height: 1220px;
+      }
+      @include mobile {
+        top: 3100px;
+      }
     }
     &_firstRectangle {
       position: absolute;
@@ -42,6 +79,23 @@
       left: -320px;
       top: 2700px;
       z-index: -1;
+      @include desktop-medium {
+        left: -650px;
+        top: 2850px;
+      }
+      @include tablet {
+        width: 700px;
+        left: -400px;
+        top: 3050px;
+      }
+      @include mobile-large {
+        top: 3700px;
+        left: -300px;
+      }
+      @include mobile {
+        top: 3200px;
+        left: -330px;
+      }
     }
     &_firstSmallRectangles {
       position: absolute;
@@ -49,6 +103,20 @@
       top: 3650px;
       left: 90px;
       z-index: -1;
+      @include desktop-medium {
+        left: -150px;
+        top: 3710px;
+      }
+      @include tablet {
+        left: -200px;
+        top: 3720px;
+      }
+      @include mobile-large{
+        top: 4670px;
+      }
+      @include mobile {
+        top: 4190px;
+      }
     }
     &_secondRectangle {
       position: absolute;
@@ -56,6 +124,20 @@
       left: 1200px;
       top: 3300px;
       z-index: -1;
+      @include desktop-medium {
+        top: 3200px;
+        left: 940px;
+      }
+      @include tablet {
+        left: 650px;
+        top: 3400px;
+        width: 500px;
+      }
+      @include mobile-large {
+        top: 3900px;
+        width: 1000px;
+        left: 300px;
+      }
     }
     &_secondSmallRectangles {
       position: absolute;
@@ -63,11 +145,36 @@
       left: 1270px;
       top: 3190px;
       z-index: -1;
+      @include desktop-medium {
+        top: 3240px;
+        left: 1060px;
+      }
+      @include tablet {
+        left: 800px;
+        top: 3270px;
+      }
     }
     &_main {
       &_title {
         padding-left: 500px;
         padding-top: 260px;
+        color: var(--text-color-white);
+        @include desktop-medium{
+          padding-left: 400px;
+        }
+        @include tablet {
+          padding-left: 340px;
+          padding-top: 200px;
+          font-size: 36px;
+        }
+        @include mobile-large {
+          padding-top: 200px;
+          padding-left: 230px ;
+          font-size: 32px;
+        }
+        @include mobile {
+         padding-left: 30px;
+        }
       }
       &_slider {
         width: 1132px;
@@ -77,6 +184,24 @@
         margin-left: 150px;
         border-radius: 32px;
         z-index: 5;
+        @include desktop-medium {
+          margin-left: 40px;
+          margin-top: 40px;
+        }
+        @include tablet {
+          margin-left: 0;
+          width: 947px;
+        }
+        @include mobile-large {
+          width: 490px;
+          height: 610px;
+          margin-left: 123px;
+        }
+        @include mobile {
+          width: 343px;
+          height: 550px;
+          margin-left: 0;
+        }
       }
     }
   }

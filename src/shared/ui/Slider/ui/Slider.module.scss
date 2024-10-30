@@ -22,6 +22,12 @@
   display: flex;
   height: 378px;
   width: inherit;
+  @include mobile-large {
+    height: 610px;
+  }
+  @include mobile {
+    height: 550px;
+  }
 }
 
 .sliderArrow {
@@ -30,19 +36,46 @@
   cursor: pointer;
   background-color: var(--color-button-hover);
   margin-bottom: 56px;
+  border-radius: 8px;
+  width: 40px;
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    border-radius: 32px;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    margin-left: 6px;
+    margin-top: 10px;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    border-radius: 32px;
+    border-right: 3px solid white;
+    transform: rotate(135deg);
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 6px;
+  }
 }
 
 .leftArrow {
   margin-left: 56px;
+  transform: rotate(180deg);
 }
 
 .rightArrow {
-
 }
+
 .arrows {
   width: min-content;
   display: flex;
   gap: 12px;
   position: absolute;
   padding-top: 300px;
+  @include mobile-large {
+    visibility: hidden;
+  }
 }

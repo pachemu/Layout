@@ -43,10 +43,10 @@ const Slider: React.FC<SliderProps> = ({slides}) => {
             </div>
             <div className={styles.arrows}>
                 <button onClick={handlePrev} className={`${styles.sliderArrow} ${styles.leftArrow}`}>
-                    ◀
+
                 </button>
                 <button onClick={handleNext} className={`${styles.sliderArrow} ${styles.rightArrow}`}>
-                    ▶
+
                 </button>
             </div>
         </div>

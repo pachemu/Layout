@@ -1,6 +1,5 @@
 import React from "react";
 import SecondImage from '@/shared/assets/featuredOn/Slides/Images/Second_image.svg'
-import SecondShines from '@/shared/assets/featuredOn/Slides/Shines/Shines_Second.svg'
 import SecondLogo from '@/shared/assets/featuredOn/Slides/Logos/Hafidz&Indah.svg'
 import FirstLogo from '@/shared/assets/featuredOn/Slides/Logos/First_logo.svg'
 import FirstImage from '@/shared/assets/featuredOn/Slides/Images/First_image.svg'
@@ -21,7 +20,6 @@ const data = [
     {
         description: 'Tinvio has been a foundational partner and solution. We now have faster and more efficient communication with our clients, which makes order processing and deliveries smoother than ever before.',
         image: <SecondImage/>,
-        shines: <SecondShines/>,
         logo: <SecondLogo/>
     },
     {
@@ -50,9 +48,6 @@ export const slides = [
             <div>
                 <div className={styles.block_image}>
                     {item.image}
-                </div>
-                <div className={styles.block_shines}>
-                    {item.shines}
                 </div>
             </div>
         </div>
