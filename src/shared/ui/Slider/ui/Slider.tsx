@@ -43,11 +43,16 @@ const Slider: React.FC<SliderProps> = ({slides}) => {
             </div>
             <div className={styles.arrows}>
                 <button onClick={handlePrev} className={`${styles.sliderArrow} ${styles.leftArrow}`}>
-
                 </button>
                 <button onClick={handleNext} className={`${styles.sliderArrow} ${styles.rightArrow}`}>
-
                 </button>
+            </div>
+            <div className={styles.block}>
+                {slides.map((slide, index) => (
+                    <div className={index===currentIndex ? `${styles.number_active} ${styles.number}` : styles.number} key={index}>
+
+                    </div>
+                ))}
             </div>
         </div>
     );

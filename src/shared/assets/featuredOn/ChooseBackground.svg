@@ -1,14 +1,10 @@
-<svg viewBox="0 0 1907.3 958.509" fill="none" xmlns="http://www.w3.org/2000/svg" >
+<svg viewBox="0 0 1907.3 958.509" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<desc>
-			Created with Pixso.
+		Created with Pixso.
 	</desc>
-	<defs>
-		<radialGradient gradientTransform="translate(602.957 646.731) rotate(98.5547) scale(618.222 1114.44)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1312_1633_0" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#363636"/>
-			<stop offset="1.000000" stop-color="#000000" stop-opacity="0.568627"/>
-		</radialGradient>
-	</defs>
 	<g opacity="0.880000">
-		<path id="Rectangle 4189" d="M1906.97 0L54.96 264.15C23.41 268.65 -0.02 295.67 0 327.54L0.26 894.52C0.28 933.3 34.5 963.15 72.92 957.91L1907.3 707.49L1906.97 0Z" fill="url(#paint_radial_1312_1633_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Rectangle 4189" d="M1906.97 0L54.96 264.15C23.41 268.65 -0.02 295.67 0 327.54L0.26 894.52C0.28 933.3 34.5 963.15 72.92 957.91L1907.3 707.49L1906.97 0Z"
+			  fill="#1c1c1c" fill-opacity="1.000000" fill-rule="nonzero"/>
 	</g>
 </svg>
+

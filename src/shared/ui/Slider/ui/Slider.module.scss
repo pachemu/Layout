@@ -1,6 +1,5 @@
 .sliderContainer {
   position: relative;
-  overflow: hidden;
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -77,5 +76,38 @@
   padding-top: 300px;
   @include mobile-large {
     visibility: hidden;
+  }
+}
+.block {
+  display: flex;
+  gap: 16px;
+  @include abs-center;
+  padding-top: 450px;
+  @include mobile-large {
+    padding-top: 680px;
+  }
+  @include mobile {
+    padding-top: 645px;
+  }
+}
+.number {
+  color: black;
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-left: 6px;
+    margin-top: 10px;
+    transform: rotate(45deg);
+    background-color: #5C5C5C;
+    border-radius: 2px;
+    color: #1c1c1c;
+  }
+  &_active {
+    color: red;
+    &::after {
+      background-color: white;
+    }
   }
 }

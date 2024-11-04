@@ -1,0 +1,149 @@
+.block {
+  margin-top: 300px;
+  &_title {
+    padding-left: 234px;
+    padding-bottom: 70px;
+  }
+  &_of_svg {
+    padding-top: 200px;
+    display: flex;
+    gap: 250px;
+    &_default {
+      position: relative; 
+      display: inline-block;
+      z-index: 1;
+      &::after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 89px;
+        height: 89px;
+        transform: rotate(45deg);
+        background-color: rgb(215, 215, 215);
+        border-radius: 13.5px;
+        border: 12px solid rgba(255, 255, 255, 0.5);
+        z-index: -1;
+      }
+    }
+    &_title {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      color: white;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: -90px;
+        left: -20px;
+        transform: rotate(45deg);
+        z-index: -1;
+        border-radius: 25.5px;
+        background: rgb(251, 36, 43);
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 292px;
+        height: 292px;
+        top: -110px;
+        left: -40px;
+        transform: rotate(45deg);
+        border-radius: 25.5px;
+        background: rgba(251, 36, 43, 0.4);
+        z-index: -1;
+      }
+      &_number {
+        padding-left: 60px;
+        position: absolute;
+        top: -50px;
+      }
+    }
+    &_description {
+      position: absolute;
+      width: 500px;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 330px;
+          height: 330px;
+          border-radius: 25.5px;
+          background: rgba(251, 36, 43, 0.3);
+          top: -130px;
+          left: -60px;
+          transform: rotate(45deg);
+          z-index: -1;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 190px;
+        height: 93px;
+        left: 10px;
+        top: 60px;
+        border: #ffffff 2px solid;
+        border-bottom-left-radius: 250px;
+        border-bottom-right-radius: 250px;
+        border-top: none;
+      }
+    }
+    &_first_half_of_svg {
+      color: black;
+      &_0 {
+        position: relative;
+        top: -200px;
+        left: 400px;
+      }
+      &_1 {
+        position: relative;
+        top: -130px;
+        left: 100px;
+      }
+      &_2 {
+        position: relative;
+        left: 160px;
+      }
+      &_3 {
+        position: relative;
+        top: 80px;
+        left: -40px;
+      }
+      &_4 {
+        position: relative;
+        top: 190px;
+        left: 130px;
+      }
+    }
+    &_second_half_of_svg {
+      color: black;
+      &_0 {
+        position: relative;
+        top: -215px;
+        left: 40px;
+      }
+      &_1 {
+        position: relative;
+        top: -150px;
+        left: 190px;
+      }
+      &_2 {
+        position: relative;
+        left: 30px;
+        top: -10px;
+      }
+      &_3 {
+        position: relative;
+        top: 70px;
+        left: 80px;
+      }
+      &_4 {
+        position: relative;
+        top: 195px;
+        left: -220px;
+      }
+    }
+  }
+}

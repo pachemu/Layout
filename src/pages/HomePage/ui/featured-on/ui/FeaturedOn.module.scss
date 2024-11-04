@@ -13,6 +13,8 @@
     position: absolute;
     z-index: -1;
     left: -200px;
+    width: 2070px;
+    height: 244px;
     @include desktop-medium {
       left: -690px;
     }
@@ -20,7 +22,9 @@
       left: -1045px;
     }
     @include mobile-large {
-      left: -1305px;
+      left: 0px;
+      width: 3100px;
+      height: 451px;
     }
   }
   &_title {
@@ -28,6 +32,9 @@
     text-align: center;
     margin-left: 350px;
     border-bottom: 1px rgb(210, 210, 210) solid;
+    @include laptop {
+      margin-left: 230px;
+    }
     @include tablet {
       margin-left: 150px;
     }
@@ -41,7 +48,27 @@
     }
   }
   &_companies {
-    margin-left: 100px;
+    margin-left: 150px;
+    display: flex;
+    gap: 100px;
+    @include laptop {
+      margin-left: 40px;
+    }
+    @include tablet {
+      margin-left: 30px;
+      gap: 40px;
+    }
+    @include mobile-large {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-left: 130px;
+    }
+    @include mobile {
+      flex-direction: column;
+      margin-left: 80px;
+      gap: 30px;
+    }
   }
   &_shines {
     position: absolute;
@@ -53,6 +80,7 @@
     }
   }
   &_whyChoose {
+
     &_background {
       position: absolute;
       left: 53px;
@@ -64,13 +92,14 @@
         left: 0;
       }
       @include tablet {
-        top: 3600px;
+        top: 2900px;
       }
       @include mobile-large {
         height: 1220px;
+        top: 3700px;
       }
       @include mobile {
-        top: 3100px;
+        top: 3200px;
       }
     }
     &_firstRectangle {
@@ -155,6 +184,7 @@
       }
     }
     &_main {
+
       &_title {
         padding-left: 500px;
         padding-top: 260px;
@@ -174,6 +204,7 @@
         }
         @include mobile {
          padding-left: 30px;
+          padding-top: 150px ;
         }
       }
       &_slider {
@@ -205,4 +236,8 @@
       }
     }
   }
+}
+
+.block {
+  overflow: hidden;
 }
