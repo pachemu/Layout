@@ -1,13 +1,37 @@
 .block {
+  position: relative;
   margin-top: 300px;
+  @include desktop-medium {
+    left: -70px;
+  }
+  @include laptop {
+    left: -120px;
+  }
+  @include tablet {
+    left: -150px;
+  }
+  @include mobile-large {
+    left: -120px;
+  }
   &_title {
     padding-left: 234px;
     padding-bottom: 70px;
+    @include tablet {
+      font-size: 32px;
+      padding-left: 320px;
+    }
+    @include mobile-large {
+      padding-left: 210px;
+      padding-bottom: 120px;
+    }
   }
   &_of_svg {
     padding-top: 200px;
     display: flex;
     gap: 250px;
+    @include mobile-large {
+      padding-top: 300px;
+    }
     &_default {
       position: relative; 
       display: inline-block;
@@ -65,6 +89,7 @@
     &_description {
       position: absolute;
       width: 500px;
+      left: -20px;
         &::before {
           content: '';
           position: absolute;
@@ -73,22 +98,15 @@
           border-radius: 25.5px;
           background: rgba(251, 36, 43, 0.3);
           top: -130px;
-          left: -60px;
+          left: -40px;
           transform: rotate(45deg);
           z-index: -1;
       }
-      &::after {
-        content: '';
-        position: absolute;
-        width: 190px;
-        height: 93px;
-        left: 10px;
-        top: 60px;
-        border: #ffffff 2px solid;
-        border-bottom-left-radius: 250px;
-        border-bottom-right-radius: 250px;
-        border-top: none;
-      }
+    }
+    &_smile {
+      margin-top: 50px;
+      position: absolute;
+      z-index: 2;
     }
     &_first_half_of_svg {
       color: black;
@@ -96,25 +114,63 @@
         position: relative;
         top: -200px;
         left: 400px;
+        @include tablet {
+          left: 350px;
+        }
+        @include mobile-large {
+          left: 700px;
+          top: -130px;
+        }
       }
       &_1 {
         position: relative;
         top: -130px;
         left: 100px;
+        @include mobile-large {
+          left: 580px;
+          top: -310px;
+        }
       }
       &_2 {
         position: relative;
         left: 160px;
+        @include tablet {
+          left: 120px;
+        }
+        @include mobile-large {
+          top: -500px;
+          left: 450px;
+        }
       }
       &_3 {
         position: relative;
         top: 80px;
         left: -40px;
+        @include tablet {
+          left: 160px;
+          top: 50px;
+        }
+        @include mobile-large {
+          top: -470px;
+          left: 300px;
+        }
       }
       &_4 {
         position: relative;
         top: 190px;
         left: 130px;
+        @include tablet {
+          left: 285px;
+          top: 160px;
+        }
+        @include mobile-large {
+          top: -350px;
+          left: 100px;
+        }
+        &_logo {
+          position: relative;
+          left: 10px;
+        }
       }
     }
     &_second_half_of_svg {
@@ -123,26 +179,74 @@
         position: relative;
         top: -215px;
         left: 40px;
+        @include mobile-large {
+          top: 100px;
+          left: 70px;
+        }
       }
       &_1 {
         position: relative;
         top: -150px;
         left: 190px;
+        @include tablet {
+          left: 180px;
+          top: -130px;
+        }
+        @include mobile-large {
+          left: -115px;
+          top: 230px;
+        }
       }
       &_2 {
         position: relative;
         left: 30px;
         top: -10px;
+        @include tablet {
+
+        }
+        @include mobile-large {
+          left: -180px;
+          top: 270px;
+        }
+        &_logo {
+          position: relative;
+          left: 10px;
+        }
       }
       &_3 {
         position: relative;
         top: 70px;
         left: 80px;
+        @include tablet {
+          left: 70px;
+          top: 100px;
+        }
+        @include mobile-large {
+          left: -370px;
+          top: 120px;
+        }
+        &_logo {
+          position: relative;
+          top: 20px;
+          left: -5px;
+        }
       }
       &_4 {
         position: relative;
         top: 195px;
         left: -220px;
+        @include tablet {
+          left: 45px;
+          top: 165px;
+        }
+        @include mobile-large {
+          top: -30px;
+          left: -455px;
+        }
+        &_logo {
+          position: relative;
+          left: -5px;
+        }
       }
     }
   }
