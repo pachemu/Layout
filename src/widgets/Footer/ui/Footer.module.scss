@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 157px;
+  background-color: #ffffff;
+  //Соре за такую грязь как я продолжу дальше делать, просто main из-за моим
+  //абьюзом функции top: стал выходить за свою высоту и благодаря этому сейчас футер сосёт хуй, так что сорямба но лучше сгрязнуть чем переписывать код, оке?
+  margin-top: calc(266vh + 48px);
+  margin-left:300px;
+  @include desktop-medium {
+    margin-top: 230vh;
+    margin-left: 80px;
+  }
+  @include laptop {
+    margin-top: 234vh;
+    padding-top: 36px;
+  }
+  @include mobile-large {
+    margin-top: 400vh;
+  }
+  @include mobile {
+    margin-top: 307vh;
+  }
+
+  &_main {
+    display: flex;
+    &_links {
+      padding-left: 461px;
+      gap: 48px;
+      display: flex;
+      align-items: center;
+      @include desktop-medium {
+        padding-left: 352px;
+      }
+      @include laptop {
+        padding-left: 181px;
+      }
+      @include tablet {
+        padding-left: 80px;
+      }
+
+      &_half {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+    &_nav {
+      display: flex;
+      align-items: center;
+      &_links {
+        padding-left: 50px;
+        display: flex;
+        gap: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+  &_copyright {
+      padding-top: 50px;
+  }
+}

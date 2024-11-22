@@ -1,16 +1,18 @@
-// src/shared/ui/Layout.tsx
 import React from 'react';
+import styles from './Layout.module.scss'
 import { Outlet } from 'react-router-dom';
-import Header from '../../widgets/Header/ui/Header';
+import Header from '@/widgets/Header/ui/Header';
 import '@/app/styles/main.scss'
+import Footer from "@/widgets/Footer/ui/Footer";
 
 const Layout = () => {
     return (
-        <div>
+        <div className={styles.layout}>
             <Header />
-            <main>
+            <main className={styles.main}>
                 <Outlet />
             </main>
+            <Footer/>
         </div>
     );
 };

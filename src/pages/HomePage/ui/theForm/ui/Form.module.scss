@@ -1,6 +1,6 @@
 .Form {
   padding-top: 250px;
-  @include mobile {
+  @include mobile-large {
     padding-top: 0;
   }
   &_background {

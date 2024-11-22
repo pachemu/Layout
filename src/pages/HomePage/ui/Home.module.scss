@@ -1,6 +1,9 @@
 .home {
   width: 100%;
   margin-left: 15.6vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   @include desktop-medium {
     margin-left: 123px;
     margin-right: 130px;
