@@ -12,8 +12,10 @@ const Footer = () => {
         <section className={styles.footer}>
             <div className={styles.footer_main}>
                 <div className={styles.footer_main_nav}>
-                    <Logo/>
-                    <Tinvio/>
+                    <span className={styles.footer_main_nav_logo}>
+                       <Logo/>
+                        <Tinvio/>
+                    </span>
                     <div className={styles.footer_main_nav_links}>
                         <span>Home</span>
                         <span>Features</span>
@@ -26,14 +28,24 @@ const Footer = () => {
                         <Inline/>
                         <Instagram/>
                     </div>
-                    <div className={styles.footer_main_links_half}>
+                    <div className={`${styles.footer_main_links_half} ${styles.footer_main_links_half_2}`}>
                         <Play/>
                         <Store/>
                     </div>
                 </div>
             </div>
             <div className={styles.footer_copyright}>
-                <Copyright/>
+                <span>
+                    © Tinvio™ 2020. All Rights Reserved
+                </span>
+                <div className={styles.footer_copyright_half}>
+                    <div>
+                        Privacy Policy
+                    </div>
+                    <div>
+                        Terms of Service
+                    </div>
+                </div>
             </div>
         </section>
     )

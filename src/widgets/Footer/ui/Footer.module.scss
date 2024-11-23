@@ -1,3 +1,10 @@
+@mixin border {
+    content: '';
+    border: 0.1px solid rgb(196, 196, 196);;
+    height: 32px;
+    width: 1px;
+}
+
 .footer {
   position: relative;
   bottom: 0;
@@ -18,16 +25,22 @@
   }
   @include mobile-large {
     margin-top: 400vh;
+    margin-left: 0;
   }
   @include mobile {
     margin-top: 307vh;
+    height: 446px;
   }
 
   &_main {
     display: flex;
+    @include mobile-large {
+      flex-direction: column;
+      align-items: center;
+    }
     &_links {
       padding-left: 461px;
-      gap: 48px;
+      gap: 12px;
       display: flex;
       align-items: center;
       @include desktop-medium {
@@ -39,25 +52,104 @@
       @include tablet {
         padding-left: 80px;
       }
-
+      @include mobile-large {
+        padding-left: 0;
+        padding-top: 32px;
+      }
+      @include mobile {
+        flex-direction: column;
+        padding-top: 48px;
+        gap: 16px;
+      }
       &_half {
         display: flex;
         align-items: center;
         gap: 16px;
+        &_2 {
+          &::before {
+            @include border;
+            margin-inline: 24px;
+            @include mobile-large {
+              visibility: hidden;
+              margin-inline: 0;
+            }
+          }
+        }
       }
     }
     &_nav {
       display: flex;
       align-items: center;
+      @include mobile-large {
+        flex-direction: column;
+      }
+      &_logo {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        &::before {
+          @include border;
+          left: 145px;
+          margin-top: 5px;
+          position: absolute;
+          @include mobile-large {
+            visibility: hidden;
+          }
+        }
+      }
       &_links {
         padding-left: 50px;
         display: flex;
         gap: 32px;
         font-size: 16px;
+        @include mobile-large {
+          padding-left: 0;
+          padding-top: 24px;
+        }
+        @include mobile {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
   }
   &_copyright {
       padding-top: 50px;
+      font-size: 12px;
+      color: var(--text-color-placeholder);
+      display: flex;
+    gap: 17px;
+    &::before {
+      @include border;
+    }
+    @include mobile-large {
+      padding-left: 180px;
+      padding-top: 24px;
+    }
+    @include mobile {
+      padding-left: 0;
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 16px;
+      align-items: center;
+      padding-bottom: 8px;
+    }
+    &::before {
+      @include border;
+      height: 14px;
+      position: absolute;
+      margin-left: 199px;
+    }
+    &_half {
+      display: flex;
+      gap: 17px;
+      &::before {
+        @include border;
+        height: 14px;
+        position: absolute;
+        margin-left: 83px;
+
+      }
+    }
   }
 }
