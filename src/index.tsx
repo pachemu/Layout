@@ -2,6 +2,7 @@ import {createRoot} from "react-dom/client";
 import { StrictMode } from "react";
 import './global.scss'
 import AppRouter from "./app/routing/Router";
+import React from "react-dom";
 
 const rootElement = document.getElementById("root");
 if (!rootElement) {
