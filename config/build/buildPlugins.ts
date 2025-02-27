@@ -13,7 +13,9 @@ export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): C
     const isProd = mode === 'production';
 
     const plugins: Configuration['plugins'] = [
-        new HtmlWebpackPlugin({ template: paths.html, favicon: path.resolve(paths.public, 'favicon.ico') }),
+        new HtmlWebpackPlugin({template: paths.html,
+            inject: true, // 💡,
+            favicon: path.resolve(paths.public, 'favicon.ico')}),
         new DefinePlugin({
             __PLATFORM__: JSON.stringify(platform),
             __ENV__: JSON.stringify(mode),
@@ -21,26 +23,26 @@ export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): C
 
     ]
 
-    if(isDev) {
+    if (isDev) {
         plugins.push(new webpack.ProgressPlugin())
         /** Выносит проверку типов в отдельный процесс: не нагружая сборку */
         plugins.push(new ForkTsCheckerWebpackPlugin())
         plugins.push(new ReactRefreshWebpackPlugin())
     }
 
-    if(isProd) {
+    if (isProd) {
         plugins.push(new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css',
         }))
         plugins.push(new CopyPlugin({
             patterns: [
-                { from: path.resolve(paths.public, 'locales'), to: path.resolve(paths.output, 'locales') },
+                {from: path.resolve(paths.public, 'locales'), to: path.resolve(paths.output, 'locales')},
             ],
         }),)
     }
 
-    if(analyzer) {
+    if (analyzer) {
         plugins.push(new BundleAnalyzerPlugin())
     }
 
